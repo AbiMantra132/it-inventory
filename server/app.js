@@ -22,7 +22,6 @@ async function createServer() {
   app.listen(PORT, async () => {
     try {
       console.log("Server is running on port " + PORT);
-      await testDBConnection();
     } catch (error) {
       console.error("Error during server startup:", error);
     }
@@ -30,5 +29,9 @@ async function createServer() {
 }
 
 createServer();
+
+app.get("/", (req,res) => {
+  res.status(200).send("Api For Sense-IT-Inventory");
+})
 
 app.use("/", router);
