@@ -12,7 +12,7 @@ const PORT = 8080;
 const app = express();
 
 // defining middleware
-app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
+app.use(cors({ credentials: true, origin: "*", methods: ["GET", "POST", "PUT", "DELETE"] }));
 app.use(cookieParser());
 app.use(BodyParser.json({ limit: '200mb' }));
 
