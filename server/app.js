@@ -33,7 +33,7 @@ async function createServer() {
 createServer();
 
 app.get("/", (req,res) => {
-  res.status(200).end("Api For Sense-IT-Inventory");
+  res.status(200).send("Api For Sense-IT-Inventory");
 })
 
 app.use("/", router);
