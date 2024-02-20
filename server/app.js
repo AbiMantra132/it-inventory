@@ -33,5 +33,3 @@ createServer();
 app.get("/", (req,res) => {
   res.status(200).send("Api For Sense-IT-Inventory");
 })
-
-app.use("/", router);
