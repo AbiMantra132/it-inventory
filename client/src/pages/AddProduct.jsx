@@ -7,7 +7,7 @@ import Camera from "../components/Camera";
 
 const AddProduct = () => {
   // defining states and constants
-  const items = ["PC", "Monitor", "UPC", "HDD/SSD", "Laptop"];
+  const items = ["PC", "Monitor", "UPS", "HDD/SSD", "Laptop"];
   const departements = ["IT", "ENG", "HK", "SALES", "ACC", "SEC"];
   const labels = ["Pcs", "Unit", "Box"];
   const PostURL = Endpoints.postProduct;

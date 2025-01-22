@@ -8,7 +8,7 @@ const Update = () => {
   const [product, setProduct] = useState([]);
   const { id } = useParams();
   const navigate = useNavigate();
-  const items = ["PC", "Monitor", "UPC", "HDD/SSD", "Laptop"];
+  const items = ["PC", "Monitor", "UPS", "HDD/SSD", "Laptop"];
   const departements = ["IT", "ENG", "HK", "SALES", "ACC", "SEC"];
   const labels = ["Pcs", "Unit", "Box"];
 

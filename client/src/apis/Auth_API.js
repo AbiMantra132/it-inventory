@@ -3,6 +3,7 @@ import { Endpoints } from './Endpoints';
 
 export const sendCredentials = async (username, password) => {
   const { postUser } = Endpoints;
+
   const config = {
     url: postUser,
     data: {
